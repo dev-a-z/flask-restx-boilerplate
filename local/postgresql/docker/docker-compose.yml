@@ -1,0 +1,13 @@
+version: '2'
+services:
+  postgres:
+    image: postgres:10
+    container_name: postgres
+    environment:
+      - POSTGRES_USER=onepredict
+      - POSTGRES_PASSWORD=Init1234
+      - POSTGRES_DB=flask_demo
+    ports:
+      - '5432:5432'
+    volumes:
+      - ~/docker_volume/postgresql:/var/lib/postgresql/data

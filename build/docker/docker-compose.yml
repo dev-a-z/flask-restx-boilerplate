@@ -1,0 +1,21 @@
+version: "2"
+
+services:
+  flask-restx-boilerplate:
+    image: flask-restx-boilerplate
+    container_name: flask-restx-boilerplate
+    environment:
+      # Dev Server
+      # - DB_USER=onepredict
+      # - DB_PASSWORD=Init1234
+      # - DB_NAME=flask_demo
+      # - DB_TYPE=postgresql
+      # - DB_PORT=5432
+      # - DB_HOSTNAME=10.10.30.15
+
+      # Test
+      # Prod
+
+    restart: always
+    ports:
+      - "5000:5000"
